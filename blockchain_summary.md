@@ -25,4 +25,24 @@ Blocks are added in the chain with the following fundamental steps:
     7. Updating the Blockchain: Once the new block is added, it becomes the latest block in the blockchain. This process continues, with new blocks being added sequentially, forming a chain of blocks.
 
 ## 2. Working of Blockchain
-- **Transaction Creation**: 
+- **Transaction Creation**: The first step in the transaction creation is to initiate a transaction. Transaction can be cryptocurrency transfer, executing smart contract or any sort of interaction with the blockchain. Signing the transaction with the user's private key generates a digital signature . Digital signature is unique to private key and proves that the trancation was initiated by the owner of the private key. Transaction data and digital signature are hashed together to create a unique transaction hash. This hashg works as the idintity of the transaction. 
+- **Transaction Broadcasting**: Transaction hash, data and digital signature is broadcasted in the blockchain. Meaning sending the transaction to the nodes for verification.
+- **Transaction Verificaton**: The received transactions are verified by the nodes. Correct format of the transaction data, validity of Digital signature, enough fund to complete the transaction in the user's wallet, rules of blockchain being followed, etc sort of things are assessed by the nodes. all the verified transactions are temporarily held in mempool(memory pool) - waiting area for pending transactions. 
+- **Block addition to the chain**: Based on the consensus a blockchain follows Miners(in PoW), Validators(in PoS) compete to add the transaction in the next block. A block constitute of some transactions from the mempool. Once the miner or validator addes the block in the blockchain, transaction hash of previous block is chained with the current one. After a successful addition of the block in the chain, users is notified via their wallet of user's client application. 
+
+**Role of Miners in blockchain**: In proof of Work consensus, Miners are those who solve complex mathematical problems to validate the transactions. In return of validating the transactions they receive rewards. The more the miners the more robust and decentralized the chain becomes. 
+
+**Consensus**: Consensus basically means "General agreenment". Since the blockchain is decentralized - no single entity is governing it, there must be a common agreement among the the people involved in the chain. Consensus is a publically agreed set of rules on how any transaction should be verified. Let's discuss two most common consensuses in the space: 
+- Proof of Work: This consensus says the one who can solve the complex mathematical problem the fastest get to validate the transaction. They are called miners. They get rewards in return. The rewareds are freshly mined. Since it is almost impossible to aquire majority of computational power by single entity, it is impossible to hack the chain. But this is a slow process, it consumes lot of energy. It can process less number of transactions per second. 
+- Proof of Stake: This consensus says the one which highest stake in the chain gets to validate the transactions. They are called validators. They have to lock their money in the network to be able to compete for being validator. The coins are not mined here. So, the rewards they get is from the fee taken by users to complete the transactions. Sinve there is no calculation involved, it is comparitavly faster and can process more number of transactions per second. 
+
+
+
+## 3. Key components
+- **Block**: Blockchain is simply a long chain of blocks. A Block is composed of hash of previous block, hash and data of current block. Each block data has bunch of transactions data taken from mempool. The transactions data can be of any type depending upon the type of blockchain. Generally they are cryptocurrency transfer and smart contract execution.
+- **Chain**: All the blocks in blockchain are linked together in chronological order. Each block contains the hash of previous block. Hence the tampering in any previous blocks disturbs the currect block. The chain ensures the integirity and immutability of the blockchain. 
+- **Miner**: In proof of Work consensus, Miners are those who solve complex mathematical problems to validate the transactions. In return of validating the transactions they receive rewards. The more the miners the more robust and decentralized the chain becomes. 
+
+**Significance of Cryptographic Hash function**: Cryptographich hash function is used to create a unique code - hash code for each blocks. The code is used in the next block. It takes in the block data and produces a hash for corresponding block. The hash works as the pointer to the block data.
+
+## 4. Cryptocurrency
