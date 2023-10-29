@@ -6,7 +6,6 @@
 // fibonacci(1); // should return 1
 // fibonacci(5); // should return 5
 
-// 0 1 1 2 3 5
 function fibonacci(numParm) {
     if (numParm == 0) return 0
     if (numParm == 1) return 1

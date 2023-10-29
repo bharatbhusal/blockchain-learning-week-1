@@ -27,16 +27,16 @@ This repository contains assignments for Week 1 of the Blockchain Learning curri
 
 5. **Palindrome Checker:**
    - File: `exercise5.js`
-   - Run: `node exercise4.js`
+   - Run: `node exercise5.js`
 
 6. **Factorial Calculator:**
    - File: `exercise6.js`
-   - Run: `node exercise4.js`
+   - Run: `node exercise6.js`
 
 7. **Fibonacci Sequence:**
    - File: `exercise7.js`
-   - Run: `node exercise4.js`
+   - Run: `node exercise7.js`
 
 8. **Unique Characters:**
-   - File: `exercise8.js`
-   - Run: `node exercise4.js`
+   - File: `bonusExercise.js`
+   - Run: `node bonusExercise.js`
