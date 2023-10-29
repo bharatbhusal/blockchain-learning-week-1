@@ -13,6 +13,9 @@ function isPalindrome(stringParm) {
 
 function reverseString(stringParm) {
     return [...stringParm].reverse().join('')
+    //first converting the stringParm into an array of characters.
+    //Then reversing the array.
+    //Finally converting the array into string again.
 }
 
 console.log(isPalindrome("Madam"))

@@ -11,10 +11,10 @@ function hasUniqueChars(stringParm) {
     {
         if (!pool.includes(i))
         {
-            pool.push(i)
+            pool.push(i) //adding all unique characters in an array.
         }
     }
-    if (pool.length === stringParm.length) return true
+    if (pool.length === stringParm.length) return true //lenght of array and string is same means all characters in the string are unique.
     else return false
 }
 

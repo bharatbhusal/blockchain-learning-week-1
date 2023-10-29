@@ -6,8 +6,9 @@
 // calculateFactorial(0); // should return 1
 
 function calculateFactorial(numParm) {
-    if (numParm == 0 || numParm == 1) return 1
-    return numParm * calculateFactorial(numParm - 1)
+    //Recursively finding the factorial. 
+    if (numParm == 0 || numParm == 1) return 1 //factorial of 0 and 1 is 1.
+    return numParm * calculateFactorial(numParm - 1) // factorial of anytihng more than 1 is the product of all the numbers from itself to 1.
 }
 
 console.log(calculateFactorial(5))
