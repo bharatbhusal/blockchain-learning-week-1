@@ -1,10 +1,5 @@
-# blockchain-learning-week-1
-0xCommit Bootcamp - Audit and Security | Router Protocol
-
-
-
 # Blockchain Learning Week 1
-
+_0xCommit Bootcamp - Audit and Security | Router Protocol_
 This repository contains assignments for Week 1 of the Blockchain Learning curriculum, focusing on Blockchain basics and JavaScript fundamentals.
 
 ## Exercises:
